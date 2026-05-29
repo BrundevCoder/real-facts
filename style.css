@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button, label, select {
+  font-family: "Outfit", Arial;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#fff, #c9c9c9);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+  padding: 1.25rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fact-text {
+  font-family: "Syne", Arial;
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 1.55rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .7rem;
+}
+
+label {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.selectBox {
+  background: #333;
+  color: #c9c9c9;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.buttons-container {
+  margin-top: .5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.05rem;
+  background: #fa2a2a;
+  filter: contrast(2);
+  border: 2px solid #700202;
+  padding: 0.75rem .5rem;
+  border-radius: 12px;
+  box-shadow: 4px 6px #700202;
+  transition: 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(2px) translateX(2px);
+  box-shadow: 2px 4px #700202;
+}
+
+.btn:active {
+  transform: translateY(3px) translateX(3px);
+  box-shadow: 1px 3px #700202;
+}
+
+@media (max-width: 400px) {
+  .fact-text {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .fact-text {
+    font-size: 1.85rem;
+  }
+}
