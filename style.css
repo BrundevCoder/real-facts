@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-button, label, select {
+button, label, select, .warning {
   font-family: "Outfit", Arial;
   font-weight: 700;
 }
@@ -92,6 +92,12 @@ label {
 .btn:active {
   transform: translateY(3px) translateX(3px);
   box-shadow: 1px 3px #700202;
+}
+
+.warning {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  text-align: justify;
 }
 
 @media (max-width: 400px) {
