@@ -19,7 +19,8 @@ techFacts = [
   "JavaScript was created by McDonald's",
   "Google is a Game",
   "VS Code is where you buy games",
-  "Discord is where you code"
+  "Discord is where you code",
+  "WhatsApp was created by HackClub"
 ]
 
 worldFacts = [
