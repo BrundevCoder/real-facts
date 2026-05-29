@@ -3,7 +3,7 @@ const factType = document.getElementById("factType");
 const generateButton = document.getElementById("generateBtn");
 const copyButton = document.getElementById("copyBtn");
 
-const API_URL = "";
+const API_URL = "http://192.168.1.51:5000/facts";
 
 function displayFact(fact) {
   factDisplayer.innerText = fact;
@@ -26,7 +26,7 @@ function generateFact() {
       return response.json();
     })
     .then(fact => {
-      let factTitlte = fact["Title"];
+      let factTitlte = fact["fact"];
 
       displayFact(factTitlte);
 
@@ -38,9 +38,9 @@ function generateFact() {
     .catch(error => {
       generateButton.disabled = false;
       copyButton.disabled = false;
-      
+
       console.error(error);
-      displayFact("Try Again!");
+      displayFact("Try Again! False facts comming...");
     })
 }
 
