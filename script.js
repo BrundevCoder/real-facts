@@ -46,5 +46,5 @@ function generateFact() {
 
 generateButton.addEventListener("click", generateFact);
 copyButton.addEventListener("click", () => {
-  navigator.clipboard.writeText("Did you really think it would work?");
+  navigator.clipboard.writeText("Did you really think it would work?ofc not lol ._.");
 })
