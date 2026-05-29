@@ -10,7 +10,7 @@ schoolFacts = [
   "Homework is very fun!",
   "all schools were created by MrBeast",
   "You can run in the hallways",
-  "We love tests/exams!"
+  "We love tests/exams!",
 ]
 
 techFacts = [
@@ -20,7 +20,7 @@ techFacts = [
   "Google is a Game",
   "VS Code is where you buy games",
   "Discord is where you code",
-  "WhatsApp was created by HackClub"
+  "WhatsApp was created by HackClub",
 ]
 
 worldFacts = [
@@ -30,10 +30,10 @@ worldFacts = [
   "Brazil is in Asia",
   "The Eiffel Tower is in Germany",
   "You can Buy a country",
-  "The Moon costs like... $1 in sale"
+  "The Moon costs like... $1 in sale",
 ]
 
-@app.route("/facts/<factType>")
+@app.route("/facts/<factType>", methods=['GET'])
 def get_fact(factType):
   
   if factType == "all":
@@ -45,7 +45,7 @@ def get_fact(factType):
   elif factType == "world":
     return jsonify({"fact": choice(worldFacts)})
 
-  return jsonify({"fact": "Fact Does Not Exist yet"})
+  return jsonify({"fact": "Fact Does Not Exist yet"}), 404
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0", port=5000)

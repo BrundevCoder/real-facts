@@ -3,7 +3,7 @@ const factType = document.getElementById("factType");
 const generateButton = document.getElementById("generateBtn");
 const copyButton = document.getElementById("copyBtn");
 
-const API_URL = "http://192.168.1.51:5000/facts";
+const API_URL = "https://real-facts-api-v1.onrender.com/facts";
 
 function displayFact(fact) {
   factDisplayer.innerText = fact;
